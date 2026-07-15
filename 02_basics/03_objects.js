@@ -8,9 +8,10 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Chhaya",
     "full name": "Chhaya Singh",
-    [mySym]: "mykey1"//to use its ype as symbol u must write it as [mySym]
-    //if its is mySym: "mykey1" its aoutput is also like this mySym: 'mykey1' it is normal key which is like string
-    //but if we want to refer that symbol we use [] and its output will be [Symbol(key1)]: 'mykey1'
+    [mySym]: "mykey1",/*to use its ype as symbol u must write it as [mySym]
+    if its is mySym: "mykey1" its aoutput is also like this mySym: 'mykey1' it is normal key which is like string
+    but if we want to refer that symbol we use [] and its output will be [Symbol(key1)]: 'mykey1'
+    */
     age: 18,
     location: "Kota",
     email: "sonal@google.com",
