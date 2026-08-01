@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // div.innerText = "Chai aur code"
+    //id and attribute log jyada prefer krte hai kyoki ye usme ki value ko leke ni ata vo direct value set krta hai toh ek round trip bachta hai waha pe
+    //lekin jo ye className hai and innerText hai vo jo bhi value wha pe hai usko override krta hai, pehle usko select(refrence) krke lata hai fir ye value set krta hai toh round trip hojata
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>
