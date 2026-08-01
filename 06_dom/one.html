@@ -1,0 +1,87 @@
+<!-- console.log(window)
+console.log(window.document)
+console.log(document)
+console.dir(document) -->
+
+<!DOCTYPE html>  <!-- document type-->
+<html lang="en">  <!--start-->
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title> <!-- DOM learning is text node in here -->
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- =>console.log(document.baseURI)
+    =>console.log(document.links)//it is not array it is HTMLCollection but we can access specific numbered link by this like document.links[2]
+    =>document.getElementById('firstHeading')
+    =>document.getElementById('firstHeading').innerHTML = "<h1>chai or code</h1>//dom manipulation"
+    =>document.getElementById('id').id->will give its id
+    =>document.getElementById('id').class->undefined
+    =>document.getElementById('id').className->classname
+    =>document.getElementById('id').getAttribute('id')->id
+    =>document.getElementById('id').getAttribute('class')->classname//key pass krni hai value milegi
+    =>document.getElementById('id').setAttribute('class','test')->undefined//but when we see it inside element udhrr class ke andr test set hojega
+    =>const title = document.getElementById('id')
+    =>title.style.backgroundColor = 'green'
+    =>title.style.padding = "15px"
+    =>title.textContent->content//text which is visible plus hidden by any display method or anything else
+    =>title.innerHTML->content//agr text ke andr koi html value likh rkha hai toh ye vo bhi dedega like agr span add krke display none kr rkha toh vo span tah bhi dikhayega pura
+    =>title.innerTEXT->content//text which is visible on the server
+    =>document.querySelector('h1')//page pe jitne h1 honge usme se 1st apko dediye jayenga
+    =>document.querySelector('#title')
+    =>document.querySelector('.heading')
+    =>if we have ul and 3 list item in it and want to acces first or edit first one so->
+    document.querySelector('ul')
+    const myul = document.querySelector('ul')
+    myul.querySelector('li')//as ye first li hi dega
+    const turnGreen = myul.querySelector('li')
+    turnGreen.style.backgroundColor = "green"
+    =>querySelector ek hi value deta hai
+    =>document.querySelectorAll('li')->NodeList//agr nodelist mai map use krna hai toh pehle isse convert krna pdega
+    =>const tempLiList = document.querySelectorAll('li')
+    =>tempLiList.style.color='green'->error
+    =>tempLiList[0].style.color='green'
+    =>tempLiList.forEach(function(l){
+    l.style.color="green"
+    })
+    =>document.getElementByClassName('list-item')->html collection
+    => tempClassList=document.getElementByClassName('list-item')
+    =>tempClassList.forEach(function(li){
+    console.log(li)
+    })//error//isme for each name ki koi cheez hi nahi soo iss html collection ko convert krna pdega to iterate it with for eaach
+    =>Array.from(tempClassList)->array hai values isme ke
+    =>const myConvertedArray = Array.from(tempClassList)
+    =>myConvertedArray.orEach(function(li){
+        li.style.color="orange"
+    })//jab bhi query selector ya class usse kree toh iss tarike se value liya jata hai or change kia jata hai 
+
+
+
+
+
+
+    -->
